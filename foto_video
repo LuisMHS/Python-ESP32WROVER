@@ -6,7 +6,7 @@ from threading import Thread
 import os
 
 class CameraStream:
-    def _init_(self, url):
+    def __init__(self, url):
         self.cap = cv2.VideoCapture(url)
         self.running = True
         self.frame = None
